@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Inicio">
+    <ContentPage.Content>
+
+
+        <Grid x:Name="PaginaInicio" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" 
+                         Grid.Column="0"
+                         Orientation="Vertical" 
+                         Margin="0,0,0,0">
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center" 
+                         Margin="0,5,0,0" 
+                         BackgroundColor="White">
+                    <Label Text="  Usuario"
+                           TextColor="Green"
+                           FontSize="18"
+                           HorizontalOptions="Fill"></Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="0" 
+                         Grid.Column="1"
+                         Orientation="Vertical" 
+                         Margin="0,0,0,0">
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center" 
+                         Margin="0,5,0,0" 
+                         BackgroundColor="White">
+                    <Label Text="Cerrar Sesión  "
+                           TextColor="Red"
+                           FontSize="18"
+                           HorizontalOptions="End"></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" 
+                         Grid.ColumnSpan="2"
+                         Orientation="Vertical" 
+                         Margin="0,0,0,0">
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center" 
+                         Margin="0,5,0,0" 
+                         BackgroundColor="White">
+                    <Label Text="JJ.CESVIC"
+                           TextColor="Black"
+                           FontSize="48"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" 
+                         Grid.Column="0"
+                         Orientation="Vertical" 
+                         Margin="0,-15,0,0"
+                         BackgroundColor="White">
+                <Image Source="camion.jpg"
+                       HeightRequest="40"
+                       HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Grid.Row="2" 
+                         Grid.Column="1"
+                         Orientation="Vertical" 
+                         Margin="0,-15,0,0"
+                         BackgroundColor="White">
+
+                <Label Text="Distribuciones"
+                           TextColor="Black"
+                           FontSize="26"
+                           HorizontalOptions="Fill"></Label>
+            </StackLayout>
+
+
+
+            <StackLayout Grid.Row="3" 
+                         Grid.Column="0"
+                     Orientation="Vertical" 
+                     Margin="0,15,0,0">
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center" 
+                         Margin="0,5,0,0" 
+                         BackgroundColor="White">
+                    <Image Source="pedidos.png" 
+                       Aspect="AspectFit" 
+                       Margin="10" 
+                       HeightRequest="120"
+                       WidthRequest="120" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="3" 
+                         Grid.Column="1"
+                     Orientation="Vertical" 
+                     Margin="0,15,0,0">
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center" 
+                         Margin="0,5,0,0" 
+                         BackgroundColor="White">
+                    <Image Source="planillas.png" 
+                       Aspect="AspectFit" 
+                       Margin="10" 
+                       HeightRequest="120"
+                       WidthRequest="120" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="4" 
+                         Grid.Column="0"
+                     Orientation="Vertical" 
+                     Margin="0,0,0,0">
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center" 
+                         Margin="0,5,0,0" 
+                         BackgroundColor="White">
+                    <Image Source="facturas.png" 
+                       Aspect="AspectFit" 
+                       Margin="10" 
+                       HeightRequest="120"
+                       WidthRequest="120" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Grid.Row="4" 
+                         Grid.Column="1"
+                     Orientation="Vertical" 
+                     Margin="0,0,0,0">
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center" 
+                         Margin="0,5,0,0" 
+                         BackgroundColor="White">
+                    <Image Source="inventarios.png" 
+                       Aspect="AspectFit" 
+                       Margin="10" 
+                       HeightRequest="120"
+                       WidthRequest="120" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
