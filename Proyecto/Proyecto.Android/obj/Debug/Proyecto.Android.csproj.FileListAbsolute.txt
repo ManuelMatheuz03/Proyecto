@@ -106,7 +106,6 @@ C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\res\drawable\logoprincipal.jpg
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\res\drawable\camion.jpg
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\Proyecto.Android.dll
-C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\Proyecto.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\Proyecto.Android.dll.mdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
