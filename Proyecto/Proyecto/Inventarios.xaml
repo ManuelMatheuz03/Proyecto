@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Inventarios"
+             Title="Volver">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="purpleLabel" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#2B78E4"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BorderColor" Value="White"></Setter>
+                <Setter Property="BorderWidth" Value="1"></Setter>
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+            <Style x:Key="whiteLabel" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#2B78E4" />
+                <Setter Property="BorderColor" Value="#2B78E4"></Setter>
+                <Setter Property="BorderWidth" Value="1"></Setter>
+                <Setter Property="FontSize" Value="12" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand"
+                  RowSpacing="0"
+                  ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="110"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="45"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button BackgroundColor="#2B78E4"
+                            TextColor="White"
+                            Text="Inventarios"
+                            FontSize="26"
+                        Grid.ColumnSpan="4"
+                        FontAttributes="Bold"></Button>
+
+                <Button Text="Producto" 
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Style="{StaticResource purpleLabel}" />
+
+                <Button Text="Cantidad"
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Style="{StaticResource purpleLabel}"/>
+
+                <Button Text="Medida"
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Aguacate"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="20"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="kilos"
+                       Grid.Row="2"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Platano"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="10"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="unidades"
+                       Grid.Row="3"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Gallleta Wafer"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="100"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="paquetes"
+                       Grid.Row="4"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Papa comun"
+                       Grid.Row="5"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="1"
+                       Grid.Row="5"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Bulto"
+                       Grid.Row="5"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Ahuyama"
+                       Grid.Row="6"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="20"
+                       Grid.Row="6"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Kilos"
+                       Grid.Row="6"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Cilantro"
+                       Grid.Row="7"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="3"
+                       Grid.Row="7"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Atados"
+                       Grid.Row="7"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Arveja"
+                       Grid.Row="8"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="2"
+                       Grid.Row="8"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Arrobas"
+                       Grid.Row="8"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Arveja desgranada"
+                       Grid.Row="9"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="10"
+                       Grid.Row="9"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Libras"
+                       Grid.Row="9"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+
+
+                <Button Text="Panela"
+                       Grid.Row="10"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="2"
+                       Grid.Row="10"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Cajas"
+                       Grid.Row="10"
+                       Grid.Column="2"
+                       Style="{StaticResource whiteLabel}"/>
+                
+                
+                
+                <Button Grid.ColumnSpan="3"
+                        Style="{StaticResource purpleLabel}"
+                        Grid.Row="11"></Button>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

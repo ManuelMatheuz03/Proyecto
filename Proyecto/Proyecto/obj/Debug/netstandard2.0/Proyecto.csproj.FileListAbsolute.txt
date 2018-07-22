@@ -1,7 +1,6 @@
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto\bin\Debug\netstandard2.0\Proyecto.deps.json
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto\bin\Debug\netstandard2.0\Proyecto.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto\bin\Debug\netstandard2.0\Proyecto.pdb
-C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto\obj\Debug\netstandard2.0\Proyecto.csprojAssemblyReference.cache
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto\obj\Debug\netstandard2.0\Proyecto.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto\obj\Debug\netstandard2.0\Proyecto.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto\obj\Debug\netstandard2.0\Proyecto.AssemblyInfo.cs

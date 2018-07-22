@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Pedidos"
+             Title="Volver">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="purpleLabel" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#674EA7"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BorderColor" Value="White"></Setter>
+                <Setter Property="BorderWidth" Value="1"></Setter>
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+            <Style x:Key="whiteLabel" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#674EA7" />
+                <Setter Property="BorderColor" Value="#674EA7"></Setter>
+                <Setter Property="BorderWidth" Value="1"></Setter>
+                <Setter Property="FontSize" Value="12" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand"
+                  RowSpacing="0"
+                  ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="160"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="45"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button BackgroundColor="#674EA7"
+                            TextColor="White"
+                            Text="Pedidos"
+                            FontSize="26"
+                        Grid.ColumnSpan="4"
+                        FontAttributes="Bold"></Button>
+
+                <Button Text="Semana" 
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Style="{StaticResource purpleLabel}" />
+
+                <Button Text="Contrato"
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Style="{StaticResource purpleLabel}"/>
+
+                <Button Text="Nuevo Pedido"
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Grid.Column="2"
+                       Grid.ColumnSpan="2"
+                       Style="{StaticResource purpleLabel}"
+                        x:Name="btnNuevoPedido"/>
+
+
+                <Button Text="Semana Uno Julio"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="2"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="2"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Cuatro Junio"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="3"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="3"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Tres Junio"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="4"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="4"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="4"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Dos Junio"
+                       Grid.Row="5"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="5"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="5"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="5"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Uno Junio"
+                       Grid.Row="6"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="6"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="6"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="6"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Cuatro Mayo"
+                       Grid.Row="7"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="7"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="7"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="7"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Tres Mayo"
+                       Grid.Row="8"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="8"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="8"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="8"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Dos Mayo"
+                       Grid.Row="9"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="9"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="9"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="9"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+                <Button Text="Semana Uno Mayo"
+                       Grid.Row="10"
+                       Grid.Column="0"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="478"
+                       Grid.Row="10"
+                       Grid.Column="1"
+                       Style="{StaticResource whiteLabel}"/>
+                <Button Text="Editar"
+                       Grid.Row="10"
+                       Grid.Column="2"
+                       Style="{StaticResource purpleLabel}"/>
+                <Button Text="Ver"
+                       Grid.Row="10"
+                       Grid.Column="3"
+                       Style="{StaticResource purpleLabel}"/>
+
+
+
+                <Button Grid.ColumnSpan="4"
+                        Style="{StaticResource purpleLabel}"
+                        Grid.Row="11"></Button>
+
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -12,6 +12,13 @@ namespace Proyecto
 		public MainPage()
 		{
 			InitializeComponent();
-		}
-	}
+            btnInicio.Clicked += BtnInicio_Clicked;
+        }
+
+        async void BtnInicio_Clicked(object sender, EventArgs e)
+        {
+            NavigationPage.SetHasNavigationBar(this, false);
+            await Navigation.PushAsync(new Inicio());
+        }
+    }
 }

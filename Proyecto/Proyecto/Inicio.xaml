@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Proyecto.Inicio">
+             x:Class="Proyecto.Inicio"
+             Title="Cerrar Sesión">
     <ContentPage.Content>
 
 
@@ -16,36 +17,6 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-
-            <StackLayout Grid.Row="0" 
-                         Grid.Column="0"
-                         Orientation="Vertical" 
-                         Margin="0,0,0,0">
-                <StackLayout Orientation="Vertical" 
-                         VerticalOptions="Center" 
-                         Margin="0,5,0,0" 
-                         BackgroundColor="White">
-                    <Label Text="  Usuario"
-                           TextColor="Green"
-                           FontSize="18"
-                           HorizontalOptions="Fill"></Label>
-                </StackLayout>
-            </StackLayout>
-            <StackLayout Grid.Row="0" 
-                         Grid.Column="1"
-                         Orientation="Vertical" 
-                         Margin="0,0,0,0">
-                <StackLayout Orientation="Vertical" 
-                         VerticalOptions="Center" 
-                         Margin="0,5,0,0" 
-                         BackgroundColor="White">
-                    <Label Text="Cerrar Sesión  "
-                           TextColor="Red"
-                           FontSize="18"
-                           HorizontalOptions="End"></Label>
-                </StackLayout>
-            </StackLayout>
-
             <StackLayout Grid.Row="1" 
                          Grid.ColumnSpan="2"
                          Orientation="Vertical" 
@@ -67,6 +38,7 @@
                          Orientation="Vertical" 
                          Margin="0,-15,0,0"
                          BackgroundColor="White">
+
                 <Image Source="camion.jpg"
                        HeightRequest="40"
                        HorizontalOptions="End"></Image>
@@ -100,6 +72,11 @@
                        WidthRequest="120" 
                        VerticalOptions="Center" 
                        HorizontalOptions="Center"/>
+                    <Button x:Name="imgPedidos"
+                            BackgroundColor="#674EA7"
+                            TextColor="White"
+                            Text="Pedidos"
+                            FontSize="16"></Button>
                 </StackLayout>
             </StackLayout>
             <StackLayout Grid.Row="3" 
@@ -117,6 +94,11 @@
                        WidthRequest="120" 
                        VerticalOptions="Center" 
                        HorizontalOptions="Center"/>
+                    <Button x:Name="imgPlanillas"
+                            BackgroundColor="#FFD966"
+                            TextColor="White"
+                            Text="Planillas"
+                            FontSize="16"></Button>
                 </StackLayout>
             </StackLayout>
 
@@ -136,6 +118,11 @@
                        WidthRequest="120" 
                        VerticalOptions="Center" 
                        HorizontalOptions="Center"/>
+                    <Button x:Name="imgFacturas"
+                            BackgroundColor="#CF2B27"
+                            TextColor="White"
+                            Text="Facturas"
+                            FontSize="16"></Button>
                 </StackLayout>
             </StackLayout>
             <StackLayout Grid.Row="4" 
@@ -153,6 +140,11 @@
                        WidthRequest="120" 
                        VerticalOptions="Center" 
                        HorizontalOptions="Center"/>
+                    <Button x:Name="imgInventarios"
+                            BackgroundColor="#2B78E4"
+                            TextColor="White"
+                            Text="Inventarios"
+                            FontSize="16"></Button>
                 </StackLayout>
             </StackLayout>
         </Grid>
