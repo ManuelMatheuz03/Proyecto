@@ -5,205 +5,76 @@
              Title="Volver">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style x:Key="purpleLabel" TargetType="Button">
+            <Style x:Key="Label" TargetType="Label">
                 <Setter Property="BackgroundColor" Value="#FFD966"/>
                 <Setter Property="TextColor" Value="White" />
-                <Setter Property="BorderColor" Value="White"></Setter>
-                <Setter Property="BorderWidth" Value="1"></Setter>
-                <Setter Property="FontSize" Value="14" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="16" />
             </Style>
-            <Style x:Key="whiteLabel" TargetType="Button">
+            <Style x:Key="buttonPurple" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#FFD966"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="HeightRequest" Value="100"></Setter>
+                <Setter Property="WidthRequest" Value="100"></Setter>
+            </Style>
+
+
+            <Style x:Key="LabelWhite" TargetType="Label">
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="TextColor" Value="#FFD966" />
-                <Setter Property="BorderColor" Value="#FFD966"></Setter>
-                <Setter Property="BorderWidth" Value="1"></Setter>
-                <Setter Property="FontSize" Value="12" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+            <Style x:Key="buttonWhite" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#FFD966" />
+                <Setter Property="FontSize" Value="14" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Grid VerticalOptions="FillAndExpand"
-                  HorizontalOptions="FillAndExpand"
-                  RowSpacing="0"
-                  ColumnSpacing="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"></ColumnDefinition>
-                    <ColumnDefinition Width="140"></ColumnDefinition>
-                    <ColumnDefinition Width="170"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"></RowDefinition>
-                    <RowDefinition Height="45"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="20"></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <Button BackgroundColor="#FFD966"
+        <StackLayout >
+            <Frame HeightRequest="50" WidthRequest="100">
+                <Label BackgroundColor="#FFD966"
                             TextColor="White"
-                            Text="Planillas"
+                            Text="PLANILLAS"
                             FontSize="26"
-                        Grid.ColumnSpan="4"
-                        FontAttributes="Bold"></Button>
-
-                <Button Text="Pedido" 
+                        FontAttributes="Bold"
+                       Style="{StaticResource Label}"></Label>
+            </Frame>
+            <Frame>
+                <ListView x:Name="DataList" HorizontalOptions="Center" VerticalOptions="Center">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Semana}" 
+                                      Detail="{Binding Contrato}" 
+                                      DetailColor="Black" 
+                                      TextColor="#FFD966"
+                                      ></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Frame>
+            <StackLayout HeightRequest="90" WidthRequest="100">
+                <Button Text="Nuevo Pedido"
                        FontAttributes="Bold"
-                       Grid.Row="1"
-                       Style="{StaticResource purpleLabel}" />
-
-                <Button Text="Fecha"
+                       Style="{StaticResource buttonPurple}"
+                        x:Name="btnNuevoPedido"
+                        FontSize="16"
+                            HeightRequest="40"
+                            Clicked="BtnNuevoPedido_Clicked"/>
+                <Button Text="Ver Pedidos"
                        FontAttributes="Bold"
-                       Grid.Row="1"
-                       Grid.Column="1"
-                       Style="{StaticResource purpleLabel}"/>
+                       Style="{StaticResource buttonPurple}"
+                        x:Name="ShowButton"
+                        FontSize="16"
+                            HeightRequest="40"
+                            Clicked="ShowButton_Clicked"/>
 
-                <Button Text="Acciones"
-                       FontAttributes="Bold"
-                       Grid.Row="1"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="34"
-                       Grid.Row="2"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="2"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="2"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="33"
-                       Grid.Row="3"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="3"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="3"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="32"
-                       Grid.Row="4"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="4"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="4"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="31"
-                       Grid.Row="5"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="5"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="5"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="30"
-                       Grid.Row="6"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="6"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="6"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="29"
-                       Grid.Row="7"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="7"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="7"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="28"
-                       Grid.Row="8"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="8"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="8"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="27"
-                       Grid.Row="9"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="9"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="9"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="26"
-                       Grid.Row="10"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="10"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="10"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-
-                <Button Grid.ColumnSpan="3"
-                        Style="{StaticResource purpleLabel}"
-                        Grid.Row="11"></Button>
-
-            </Grid>
+            </StackLayout>
 
         </StackLayout>
     </ContentPage.Content>

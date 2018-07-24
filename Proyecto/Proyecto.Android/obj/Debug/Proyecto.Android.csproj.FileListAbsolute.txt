@@ -1,10 +1,10 @@
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\Proyecto.Android.csprojAssemblyReference.cache
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\Proyecto.Android.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\Proyecto.Android.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\com.companyname.Proyecto.apk
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\com.companyname.Proyecto-Signed.apk
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\Proyecto.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\Proyecto.pdb
-C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\Proyecto.Android.csprojAssemblyReference.cache
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\Proyecto.Android.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\Proyecto.Android.csproj.CopyComplete
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\Proyecto.Android.dll
@@ -39,6 +39,7 @@ C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\uploadflags.txt
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\Mono.Android.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\mscorlib.pdb
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\SQLite-net.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\System.Core.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\System.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug\System.Xml.pdb
@@ -59,6 +60,7 @@ C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\bin\Debug
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\Mono.Android.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\mscorlib.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\Proyecto.pdb
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\SQLite-net.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\System.Core.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\System.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\linksrc\System.Xml.pdb
@@ -89,6 +91,7 @@ C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\Mono.Security.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\mscorlib.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\Proyecto.pdb
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\SQLite-net.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Core.pdb
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Data.pdb

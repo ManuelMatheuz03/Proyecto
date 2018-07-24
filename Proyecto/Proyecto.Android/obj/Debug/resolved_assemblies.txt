@@ -4,6 +4,12 @@ C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\mscorlib.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\Proyecto.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\SQLite-net.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\SQLitePCLRaw.batteries_green.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\SQLitePCLRaw.batteries_v2.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\SQLitePCLRaw.core.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Core.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Xml.dll
@@ -63,4 +69,6 @@ C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Security.SecureString.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Web.Services.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
+C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\user\source\repos\Proyecto\Proyecto\Proyecto\Proyecto.Android\obj\Debug\android\assets\Mono.Security.dll

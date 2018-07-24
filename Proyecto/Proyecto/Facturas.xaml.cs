@@ -15,6 +15,12 @@ namespace Proyecto
 		public Facturas ()
 		{
 			InitializeComponent ();
+            btnNuevoPedido.Clicked += BtnNuevoPedido_Clicked;
 		}
-	}
+
+        async void BtnNuevoPedido_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new nuevoPedido());
+        }
+    }
 }

@@ -5,33 +5,45 @@
              Title="Volver">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Style x:Key="purpleLabel" TargetType="Button">
+            <Style x:Key="Label" TargetType="Label">
                 <Setter Property="BackgroundColor" Value="#CF2B27"/>
                 <Setter Property="TextColor" Value="White" />
-                <Setter Property="BorderColor" Value="White"></Setter>
-                <Setter Property="BorderWidth" Value="1"></Setter>
-                <Setter Property="FontSize" Value="14" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="16" />
             </Style>
-            <Style x:Key="whiteLabel" TargetType="Button">
+            <Style x:Key="buttonPurple" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#CF2B27"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+
+
+            <Style x:Key="LabelWhite" TargetType="Label">
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="TextColor" Value="#CF2B27" />
-                <Setter Property="BorderColor" Value="#CF2B27"></Setter>
-                <Setter Property="BorderWidth" Value="1"></Setter>
-                <Setter Property="FontSize" Value="12" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+            <Style x:Key="buttonWhite" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#CF2B27" />
+                <Setter Property="FontSize" Value="14" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout >
             <Grid VerticalOptions="FillAndExpand"
                   HorizontalOptions="FillAndExpand"
                   RowSpacing="0"
                   ColumnSpacing="0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"></ColumnDefinition>
-                    <ColumnDefinition Width="100"></ColumnDefinition>
-                    <ColumnDefinition Width="100"></ColumnDefinition>
-                    <ColumnDefinition Width="110"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"></RowDefinition>
@@ -39,212 +51,94 @@
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
-                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
                     <RowDefinition Height="20"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <Button BackgroundColor="#CF2B27"
+                <Label BackgroundColor="#CF2B27"
                             TextColor="White"
-                            Text="Facturas"
+                            Text="FACTURAS"
                             FontSize="26"
                         Grid.ColumnSpan="4"
-                        FontAttributes="Bold"></Button>
+                        FontAttributes="Bold"
+                       Style="{StaticResource Label}"></Label>
 
-                <Button Text="Pedido" 
+                <Label Text="PEDIDO" 
                        FontAttributes="Bold"
                        Grid.Row="1"
-                       Style="{StaticResource purpleLabel}" />
+                       Style="{StaticResource Label}" />
 
-                <Button Text="Fecha"
+                <Label Text="SEMANA"
                        FontAttributes="Bold"
                        Grid.Row="1"
                        Grid.Column="1"
-                       Style="{StaticResource purpleLabel}"/>
+                       Grid.ColumnSpan="2"
+                       Style="{StaticResource Label}"/>
 
-                <Button Text="Valor"
-                       FontAttributes="Bold"
-                       Grid.Row="1"
-                       Grid.Column="2"
-                       Style="{StaticResource purpleLabel}"/>
-
-                <Button Text="Acciones"
+                <Label Text="Valor Factura"
                        FontAttributes="Bold"
                        Grid.Row="1"
                        Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
+                       Style="{StaticResource Label}"/>
 
 
-                <Button Text="34"
+                <Label Text="1"
                        Grid.Row="2"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
+                       Style="{StaticResource LabelWhite}"/>
+                <Label Text="Semana Uno Julio"
                        Grid.Row="2"
                        Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="2"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
+                       Grid.ColumnSpan="2"
+                       Style="{StaticResource LabelWhite}"/>
+                <Label Text="1'200.000"
                        Grid.Row="2"
                        Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
+                       Style="{StaticResource LabelWhite}"/>
 
 
-                <Button Text="33"
+                <Label Text="2"
                        Grid.Row="3"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
+                       Style="{StaticResource LabelWhite}"/>
+                <Label Text="Semana Cuatro Junio"
                        Grid.Row="3"
                        Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="3"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
+                       Grid.ColumnSpan="2"
+                       Style="{StaticResource LabelWhite}"/>
+                <Label Text="900.000"
                        Grid.Row="3"
                        Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
+                       Style="{StaticResource LabelWhite}"/>
 
-
-                <Button Text="32"
+                <Label Text="3"
                        Grid.Row="4"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
+                       Style="{StaticResource LabelWhite}"/>
+                <Label Text="Semana Tres Junio"
                        Grid.Row="4"
                        Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="4"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
+                       Grid.ColumnSpan="2"
+                       Style="{StaticResource LabelWhite}"/>
+                <Label Text="1'900.000"
                        Grid.Row="4"
                        Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
+                       Style="{StaticResource LabelWhite}"/>
 
 
-                <Button Text="31"
-                       Grid.Row="5"
+
+                <Frame Grid.Row="5"
                        Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="5"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="5"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="5"
-                       Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
+                       Grid.ColumnSpan="4">
+                    <Button Text="Nuevo Pedido"
+                       FontAttributes="Bold"
+                       Style="{StaticResource buttonPurple}"
+                        x:Name="btnNuevoPedido"
+                        FontSize="16"
+                            HeightRequest="10"/>
+                </Frame>
 
 
-                <Button Text="30"
-                       Grid.Row="6"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="6"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="6"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="6"
-                       Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="29"
-                       Grid.Row="7"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="7"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="7"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="7"
-                       Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="28"
-                       Grid.Row="8"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="8"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="8"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="8"
-                       Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="27"
-                       Grid.Row="9"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="9"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="9"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="9"
-                       Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-                <Button Text="26"
-                       Grid.Row="10"
-                       Grid.Column="0"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="30 - 12 - 1998"
-                       Grid.Row="10"
-                       Grid.Column="1"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="$ 1'000.000"
-                       Grid.Row="10"
-                       Grid.Column="2"
-                       Style="{StaticResource whiteLabel}"/>
-                <Button Text="Ver"
-                       Grid.Row="10"
-                       Grid.Column="3"
-                       Style="{StaticResource purpleLabel}"/>
-
-
-
-                <Button Grid.ColumnSpan="4"
-                        Style="{StaticResource purpleLabel}"
-                        Grid.Row="11"></Button>
+                <Label Grid.ColumnSpan="4"
+                        Style="{StaticResource LabelWhite}"
+                        Grid.Row="6"></Label>
 
             </Grid>
 

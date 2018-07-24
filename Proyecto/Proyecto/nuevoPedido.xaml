@@ -3,11 +3,74 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proyecto.nuevoPedido"
              Title="Volver">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Label" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="#674EA7"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+            <Style x:Key="buttonPurple" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#674EA7"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="HeightRequest" Value="100"></Setter>
+                <Setter Property="WidthRequest" Value="100"></Setter>
+            </Style>
+
+
+            <Style x:Key="LabelWhite" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#674EA7" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+            <Style x:Key="buttonWhite" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#674EA7" />
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout >
+            <Frame HeightRequest="50" WidthRequest="100">
+                <Label BackgroundColor="#674EA7"
+                            TextColor="White"
+                            Text="PEDIDOS"
+                            FontSize="26"
+                        FontAttributes="Bold"
+                       Style="{StaticResource Label}"></Label>
+            </Frame>
+            <StackLayout Orientation="Vertical" Margin="40,20">
+                <Entry x:Name="Semana" 
+                       TextColor="Black" 
+                       Placeholder="Semana" 
+                       PlaceholderColor="Gray"  
+                       FontSize="18" 
+                           HorizontalTextAlignment="Center"/>
+                <Entry x:Name="Contrato" 
+                       TextColor="Black" 
+                       Placeholder="Contrato" 
+                       PlaceholderColor="Gray"
+                       Keyboard="Numeric"
+                       FontSize="18" 
+                       HorizontalTextAlignment="Center"/>
+
+            </StackLayout>
+            <StackLayout HeightRequest="90" WidthRequest="100">
+                <Button Text="Nuevo Pedido"
+                       FontAttributes="Bold"
+                       Style="{StaticResource buttonPurple}"
+                        x:Name="SaveButton"
+                        FontSize="16"
+                            HeightRequest="40"
+                            Clicked="SaveButton_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

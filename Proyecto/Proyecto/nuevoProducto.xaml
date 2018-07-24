@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.nuevoProducto">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Label" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="#2B78E4"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+            <Style x:Key="buttonPurple" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#2B78E4"/>
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="HeightRequest" Value="100"></Setter>
+                <Setter Property="WidthRequest" Value="100"></Setter>
+            </Style>
+
+
+            <Style x:Key="LabelWhite" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#2B78E4" />
+                <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+            <Style x:Key="buttonWhite" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#2B78E4" />
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout >
+            <Frame HeightRequest="50" WidthRequest="100">
+                <Label BackgroundColor="#2B78E4"
+                            TextColor="White"
+                            Text="INVENTARIOS"
+                            FontSize="26"
+                        FontAttributes="Bold"
+                       Style="{StaticResource Label}"></Label>
+            </Frame>
+            <StackLayout Orientation="Vertical" Margin="40,20">
+                <Entry x:Name="Producto" 
+                       TextColor="Black" 
+                       Placeholder="Producto" 
+                       PlaceholderColor="Gray"  
+                       FontSize="18" 
+                       HorizontalTextAlignment="Center"/>
+                <Entry x:Name="Cantidad" 
+                       TextColor="Black" 
+                       Placeholder="Cantidad" 
+                       PlaceholderColor="Gray"
+                       Keyboard="Numeric"
+                       FontSize="18" 
+                       HorizontalTextAlignment="Center"/>
+                <Entry x:Name="Medida" 
+                       TextColor="Black" 
+                       Placeholder="Kilos / Libras / Unidades" 
+                       PlaceholderColor="Gray"
+                       FontSize="18" 
+                       HorizontalTextAlignment="Center"/>
+
+            </StackLayout>
+            <StackLayout HeightRequest="90" WidthRequest="100">
+                <Button Text="Nuevo Producto"
+                       FontAttributes="Bold"
+                       Style="{StaticResource buttonPurple}"
+                        x:Name="SaveButton"
+                        FontSize="16"
+                            HeightRequest="40"
+                            Clicked="SaveButton_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
